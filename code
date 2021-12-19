@@ -1,0 +1,9 @@
+import random
+lower = "qwertyuiopasdfghjklzxcvbnm"
+upper = "QWERTYUIOPASDFGHJKLZXCVBNM"
+nums = "0123456789"
+symbol = "()\<>«»{}[]=&§$%_-+/@*!?:;~×÷^–"
+length = int(input ("write length of password: \n"))
+all = lower + upper + nums + symbol
+password = "".join(random.sample(all,length))
+print ("your password is: ",password)
